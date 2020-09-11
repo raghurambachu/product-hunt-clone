@@ -1,11 +1,13 @@
 import React from "react";
 
-function NavItem(props) {
-  return (
-    <li className="nav-item">
-      <a href="/">{props.content}</a>
-    </li>
-  );
+class NavItem extends React.Component {
+  render() {
+    return (
+      <li className="nav-item">
+        <a href="/">{this.props.content}</a>
+      </li>
+    );
+  }
 }
 
 export default NavItem;

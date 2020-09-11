@@ -2,13 +2,15 @@ import React from "react";
 import Header from "./Header";
 import Main from "./Main";
 
-function App() {
-  return (
-    <>
-      <Header />
-      <Main />
-    </>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <Header />
+        <Main />
+      </>
+    );
+  }
 }
 
 export default App;
