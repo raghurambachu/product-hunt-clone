@@ -1,0 +1,190 @@
+@import "reset";
+@import "variables";
+@import "general";
+
+.header {
+  padding: 0.5rem 1rem;
+  background: #ffffff;
+  .search-input {
+    margin-left: 2rem;
+    width: 320px;
+    height: 40px;
+    font-family: $font-family;
+    padding-left: 1rem;
+    font-size: 0.92rem;
+    outline: 0;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(black, 0.15);
+  }
+  a {
+    color: black;
+  }
+  .nav-item {
+    margin-left: 1.5rem;
+    font-size: 0.98rem;
+    color: rgba(black, 0.55);
+    &:hover {
+      transition: 250ms ease-in-out;
+    }
+  }
+  .btn-login,
+  .btn-register {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border: 1px solid rgba(black, 0.55);
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .btn-login:hover {
+    background: rgba(black, 0.05);
+    transition: 250ms ease-in-out;
+  }
+  .btn-register {
+    background: #da552f;
+    color: whitesmoke;
+  }
+}
+
+.main-section {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2rem;
+  grid-template-areas: "content sidebar";
+  .content {
+    grid-area: content;
+    .product-list {
+      border-radius: 1rem;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .product {
+      background: #ffffff;
+      font-size: 0.97rem;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      border-bottom: 1px solid #e8e8e8;
+      &:hover {
+        background-color: #f9f9f9;
+      }
+    }
+    .prod-ls {
+      width: 15%;
+    }
+    h3 {
+      font-weight: 700;
+    }
+    .prod-center {
+      width: 70%;
+    }
+    .prod-header {
+      margin-bottom: 0.8rem;
+    }
+    .prod-desc {
+      font-weight: 200;
+      font-size: 0.9rem;
+    }
+    .prod-footer {
+      font-weight: 200;
+      font-size: 0.8rem;
+      .comment {
+        padding: 0.02rem 0.09rem;
+        border-radius: 3px;
+        border: 0.5px solid rgba(black, 0.6);
+      }
+      .icon {
+        margin-left: 0.5rem;
+        color: rgba(black, 0.6);
+      }
+      .tag {
+        margin-left: 1rem;
+      }
+    }
+    .prod-rs {
+      width: 10%;
+      font-weight: 700;
+    }
+    .upvotes {
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      border: 1px solid rgba(black, 0.3);
+    }
+  }
+}
+
+.sidebar {
+  grid-area: sidebar;
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+    .list {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+    }
+    h4 {
+      font-size: 0.98rem;
+      font-weight: 700;
+    }
+    .btn-view {
+      margin-top: 1rem;
+      background: #ffffff;
+      color: crimson;
+      padding: 0.5rem 0;
+      border-radius: 0.25rem;
+      border: 1px solid rgba(black, 0.3);
+      &:hover {
+        background: rgba(black, 0.05);
+        transition: 250ms ease-in-out;
+      }
+    }
+  }
+
+  .upcoming-prod {
+    border-bottom: 1px solid rgba(#bbb8b8, 0.5);
+    .left-side {
+      width: 75%;
+    }
+    .right-side {
+      width: 20%;
+      margin-top: 1rem;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+    .title {
+      margin: 0.5rem 0;
+    }
+    .content {
+      font-weight: 200;
+      font-size: 0.8rem;
+      margin-bottom: 0.75rem;
+    }
+    .footer {
+      font-weight: 700;
+      font-size: 0.7rem;
+      color: rgba(black, 0.4);
+      letter-spacing: 1.2px;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .company {
+    margin-bottom: 0.75rem;
+    .role,
+    .location {
+      font-size: 0.85rem;
+      font-weight: 400;
+      color: rgba(black, 0.55);
+    }
+  }
+}
